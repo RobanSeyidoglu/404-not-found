@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 100px;
+  margin-right: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100vh;
+  flex: 1;
+}
+.container .content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+  align-items: center;
+  flex: 1;
+  gap: 50px;
+}
+.container p:first-child {
+  font-family: Inconsolata;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-align: left;
+  padding: 1rem;
+}
+.content .image {
+  flex: 1;
+  max-width: 539.22px;
+}
+.content .image img {
+  width: 100%;
+}
+.content .text {
+  flex: 1;
+  max-width: 586px;
+}
+.text h1 {
+  font-family: Space Mono;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  padding: 10px;
+  max-width: 586px;
+}
+.text p {
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  padding: 20px;
+  color: #4f4f4f;
+}
+.text a {
+  text-decoration: none;
+  background-color: #333333;
+  font-family: Space Mono;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  max-width: 216px;
+  padding: 20px 0;
+}
+.container p:last-child {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  align-self: center;
+  color: #bdbdbd;
+  padding: 1rem 0;
+}
+.container p:last-child span {
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  * {
+    padding: 0;
+  }
+  .container {
+    margin: 0;
+  }
+  .container .content {
+    flex-flow: column;
+    gap: 0;
+  }
+  .text {
+    max-width: 100%;
+    flex: 2 !important;
+  }
+  .text h1 {
+    font-family: Space Mono;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    text-align: left;
+  }
+  .text p {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .text a {
+    padding: 0.7rem;
+    max-width: 180px;
+  }
+}
